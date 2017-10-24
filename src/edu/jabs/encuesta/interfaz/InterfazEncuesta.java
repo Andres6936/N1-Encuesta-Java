@@ -1,13 +1,14 @@
-/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Universidad de los Andes (Bogot� - Colombia)
- * Departamento de Ingenier�a de Sistemas y Computaci�n 
- * Licenciado bajo el esquema Academic Free License version 2.1 
- *
- * Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
- * Ejercicio: n1_encuesta
- * Autor: Equipo Cupi2 2017
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Universidad Santiago de Cali (Cali - Colombia)
+  Departamento de Ingeniería de Sistemas y Computación
+  Licenciado bajo el esquema Academic Free License version 2.1
+
+  Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
+  Ejercicio: N1-Encuesta-Java
+  Autor: Joan Andrés Buriticá Salazar
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
+
 package edu.jabs.encuesta.interfaz;
 
 import java.awt.BorderLayout;
@@ -23,7 +24,7 @@ import javax.swing.UIManager;
 import edu.jabs.encuesta.mundo.Encuesta;
 
 /**
- * Ventana principal de la aplicaci�n.
+ * Ventana principal de la aplicación.
  */
 @SuppressWarnings("serial")
 public class InterfazEncuesta extends JFrame
@@ -63,7 +64,7 @@ public class InterfazEncuesta extends JFrame
 
     /**
      * Constructor de la interfaz. <br>
-     * <b>post: </b> Se inicializ� la interfaz principal y sus paneles.
+     * <b>post: </b> Se inicializó la interfaz principal y sus paneles.
      */
     public InterfazEncuesta( )
     {
@@ -95,7 +96,7 @@ public class InterfazEncuesta extends JFrame
     }
 
     // -----------------------------------------------------------
-    // M�todos
+    // Métodos
     // -----------------------------------------------------------
 
     /**
@@ -105,13 +106,13 @@ public class InterfazEncuesta extends JFrame
     public String[] darRangoEdades( )
     {
         String[] rangoEdades = new String[3];
-        rangoEdades[ 0 ] = encuesta.darRangoEdad1( ) + " a�os";
-        rangoEdades[ 1 ] = encuesta.darRangoEdad2( ) + " a�os";
+        rangoEdades[ 0 ] = encuesta.darRangoEdad1( ) + " años";
+        rangoEdades[ 1 ] = encuesta.darRangoEdad2( ) + " años";
 
         int edadMaxima = Integer.parseInt( encuesta.darRangoEdad3( ).split( "-" )[ 1 ] );
         if( edadMaxima > 100 )
         {
-            rangoEdades[ 2 ] = encuesta.darRangoEdad3( ).split( "-" )[ 0 ] + " o m�s";
+            rangoEdades[ 2 ] = encuesta.darRangoEdad3( ).split( "-" )[ 0 ] + " o más";
         }
         else
         {
@@ -122,10 +123,10 @@ public class InterfazEncuesta extends JFrame
     }
 
     /**
-     * Devuelve los resultados parciales de un grupo dado por par�metro.
-     * @param pRango Edad para el grupo del cual se consultar� el promedio. pRango entre: 1, 2 � 3.
-     * @param pEsCasado Estado civil para el grupo del cual se consultar� el promedio.
-     * @return Calificaci�n promedio para el grupo dado.
+     * Devuelve los resultados parciales de un grupo dado por parámetro.
+     * @param pRango Edad para el grupo del cual se consultará el promedio. pRango entre: 1, 2 ó 3.
+     * @param pEsCasado Estado civil para el grupo del cual se consultará el promedio.
+     * @return Calificación promedio para el grupo dado.
      */
     public double darResultadosParciales( int pRango, boolean pEsCasado )
     {
@@ -165,8 +166,8 @@ public class InterfazEncuesta extends JFrame
     }
 
     /**
-     * Devuelve el n�mero total de opiniones recogidas.
-     * @return N�mero total de opiniones recogidas.
+     * Devuelve el número total de opiniones recogidas.
+     * @return Número total de opiniones recogidas.
      */
     public int darNumeroTotalDeOpiniones( )
     {
@@ -183,10 +184,10 @@ public class InterfazEncuesta extends JFrame
     }
 
     /**
-     * Agrega una opini�n a la encuesta en el grupo dado por el rango de edad y si es casado o no.
-     * @param pRango Edad de la persona que opin�. pRango entre: 1,2 � 3.
-     * @param pEsCasado Estado civil de la persona que opin�.
-     * @param pOpinion Valor de opini�n que se agregar�. pOpinion > 0 && pOpinion < 10.
+     * Agrega una opinión a la encuesta en el grupo dado por el rango de edad y si es casado o no.
+     * @param pRango Edad de la persona que opinó. pRango entre: 1,2 ó 3.
+     * @param pEsCasado Estado civil de la persona que opinó.
+     * @param pOpinion Valor de opinión que se agregará. pOpinion > 0 && pOpinion < 10.
      */
     public void agregarOpinion( int pRango, boolean pEsCasado, int pOpinion )
     {
@@ -231,11 +232,11 @@ public class InterfazEncuesta extends JFrame
     }
 
     // -----------------------------------------------------------------
-    // Puntos de Extensi�n
+    // Puntos de Extensión
     // -----------------------------------------------------------------
 
     /**
-     * Punto de extensi�n 1.
+     * Punto de extensión 1.
      */
     public void reqFuncOpcion1( )
     {
@@ -245,7 +246,7 @@ public class InterfazEncuesta extends JFrame
     }
 
     /**
-     * Punto de extensi�n 2.
+     * Punto de extensión 2.
      */
     public void reqFuncOpcion2( )
     {
@@ -255,8 +256,8 @@ public class InterfazEncuesta extends JFrame
     }
 
     /**
-     * Formatea un valor num�rico real para presentar en la interfaz. <br>
-     * @param valor El valor num�rico a ser formateado.
+     * Formatea un valor numérico real para presentar en la interfaz. <br>
+     * @param valor El valor numérico a ser formateado.
      * @return Cadena con el valor formateado con puntos y signos.
      */
     public String formatearValorReal( double valor )
@@ -272,8 +273,8 @@ public class InterfazEncuesta extends JFrame
     // -----------------------------------------------------------------
 
     /**
-     * Ejecuta la aplicaci�n.
-     * @param pArgs Par�metros de la ejecuci�n. No son necesarios.
+     * Ejecuta la aplicación.
+     * @param pArgs Parámetros de la ejecución. No son necesarios.
      */
     public static void main( String[] pArgs )
     {
