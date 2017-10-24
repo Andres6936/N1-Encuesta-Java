@@ -1,13 +1,14 @@
-/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Universidad de los Andes (Bogot� - Colombia)
- * Departamento de Ingenier�a de Sistemas y Computaci�n 
- * Licenciado bajo el esquema Academic Free License version 2.1 
- *
- * Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
- * Ejercicio: n1_encuesta
- * Autor: Equipo Cupi2 2017
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Universidad Santiago de Cali (Cali - Colombia)
+  Departamento de Ingeniería de Sistemas y Computación
+  Licenciado bajo el esquema Academic Free License version 2.1
+
+  Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
+  Ejercicio: N1-Encuesta-Java
+  Autor: Joan Andrés Buriticá Salazar
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
+
 package edu.jabs.encuesta.mundo;
 
 /**
@@ -21,30 +22,30 @@ public class Encuesta
     // -----------------------------------------------------------
 
     /**
-     * Modela el rango de edad: 0 < a�os <= 17.
+     * Modela el rango de edad: 0 < años <= 17.
      */
     private RangoEdad rangoEdadJovenes;
 
     /**
-     * Modela el rango de edad: 18 <= a�os <= 54.
+     * Modela el rango de edad: 18 <= años <= 54.
      */
     private RangoEdad rangoEdadAdultos;
 
     /**
-     * Modela el rango de edad: 55 <= a�os.
+     * Modela el rango de edad: 55 <= años.
      */
     private RangoEdad rangoEdadMayores;
 
     // -----------------------------------------------------------
-    // M�todos
+    // Métodos
     // -----------------------------------------------------------
 
     /**
      * Inicializa la encuesta. <br>
      * <b>post: </b> Se inicializaron los tres rangos de la encuesta. <br>
-     * Rango j�venes: 0 < a�os <= 17 <br>
-     * Rango adultos: 18 <= a�os <= 54 <br>
-     * Rango mayores: 55 <= a�os <= 200
+     * Rango jóvenes: 0 < años <= 17 <br>
+     * Rango adultos: 18 <= años <= 54 <br>
+     * Rango mayores: 55 <= años <= 200
      */
     public Encuesta( )
     {
@@ -54,8 +55,8 @@ public class Encuesta
     }
 
     /**
-     * Retorna el promedio de opiniones de gente entre 0 y 17 a�os que sea casada.
-     * @return Promedio de opiniones de personas casadas entre 0 y 17 a�os.
+     * Retorna el promedio de opiniones de gente entre 0 y 17 años que sea casada.
+     * @return Promedio de opiniones de personas casadas entre 0 y 17 años.
      */
     public double darResultadosJovenesCasados( )
     {
@@ -63,8 +64,8 @@ public class Encuesta
     }
 
     /**
-     * Retorna el promedio de opiniones de gente entre 18 y 54 a�os que sea casada.
-     * @return Promedio de opiniones de personas casadas entre 18 y 54 a�os.
+     * Retorna el promedio de opiniones de gente entre 18 y 54 años que sea casada.
+     * @return Promedio de opiniones de personas casadas entre 18 y 54 años.
      */
     public double darResultadosAdultosCasados( )
     {
@@ -72,8 +73,8 @@ public class Encuesta
     }
 
     /**
-     * Retorna el promedio de opiniones de gente con 55 a�os o m�s que sea casada.
-     * @return Promedio de opiniones de personas casadas con 55 a�os o m�s.
+     * Retorna el promedio de opiniones de gente con 55 años o más que sea casada.
+     * @return Promedio de opiniones de personas casadas con 55 años o más.
      */
     public double darResultadosMayoresCasados( )
     {
@@ -81,8 +82,8 @@ public class Encuesta
     }
 
     /**
-     * Retorna el promedio de opiniones de gente entre 0 y 17 a�os que sea soltera.
-     * @return Promedio de opiniones de personas solteras entre 0 y 17 a�os.
+     * Retorna el promedio de opiniones de gente entre 0 y 17 años que sea soltera.
+     * @return Promedio de opiniones de personas solteras entre 0 y 17 años.
      */
     public double darResultadosJovenesSolteros( )
     {
@@ -90,8 +91,8 @@ public class Encuesta
     }
 
     /**
-     * Retorna el promedio de opiniones de gente entre 18 y 54 a�os que sea soltera.
-     * @return Promedio de opiniones de personas solteras entre 18 y 54 a�os.
+     * Retorna el promedio de opiniones de gente entre 18 y 54 años que sea soltera.
+     * @return Promedio de opiniones de personas solteras entre 18 y 54 años.
      */
     public double darResultadosAdultosSolteros( )
     {
@@ -99,8 +100,8 @@ public class Encuesta
     }
 
     /**
-     * Retorna el promedio de opiniones de gente de 55 a�os o m�s que sea soltera.
-     * @return Promedio de opiniones de personas solteras con 55 a�os o m�s.
+     * Retorna el promedio de opiniones de gente de 55 años o más que sea soltera.
+     * @return Promedio de opiniones de personas solteras con 55 años o más.
      */
     public double darResultadosMayoresSolteros( )
     {
@@ -108,8 +109,8 @@ public class Encuesta
     }
 
     /**
-     * Retorna el n�mero total de opiniones hechas en la encuesta.
-     * @return N�mero total de opiniones.
+     * Retorna el número total de opiniones hechas en la encuesta.
+     * @return Número total de opiniones.
      */
     public int darNumeroTotalOpiniones( )
     {
@@ -119,8 +120,8 @@ public class Encuesta
     }
 
     /**
-     * Retorna el n�mero total de casados que han contestado la encuesta.
-     * @return N�mero total de opiniones de personas casadas.
+     * Retorna el número total de casados que han contestado la encuesta.
+     * @return Número total de opiniones de personas casadas.
      */
     public int darNumeroTotalOpinionesCasados( )
     {
@@ -130,8 +131,8 @@ public class Encuesta
     }
 
     /**
-     * Retorna el n�mero total de solteros que han contestado la encuesta.
-     * @return N�mero total de opinions de personas solteras.
+     * Retorna el número total de solteros que han contestado la encuesta.
+     * @return Número total de opinions de personas solteras.
      */
     public int darNumeroTotalOpinionesSolteros( )
     {
@@ -216,9 +217,9 @@ public class Encuesta
     }
 
     /**
-     * Agrega una opini�n de una personas soltera entre 0 y 17 a�os. <br>
-     * <b>post: </b> Se agreg� la opini�n a la encuesta.
-     * @param pOpinion Opini�n que se va a agregar a la encuesta. pOpinion > 0 && pOpinion <= 10.
+     * Agrega una opinión de una personas soltera entre 0 y 17 años. <br>
+     * <b>post: </b> Se agregá la opinión a la encuesta.
+     * @param pOpinion Opinión que se va a agregar a la encuesta. pOpinion > 0 && pOpinion <= 10.
      */
     public void agregarOpinionRangoEdadJovenesSoltero( int pOpinion )
     {
@@ -226,9 +227,9 @@ public class Encuesta
     }
 
     /**
-     * Agrega una opini�n de una personas soltera entre 18 y 55 a�os. <br>
-     * <b>post: </b> Se agreg� la opini�n a la encuesta.
-     * @param pOpinion Opini�n que se va a agregar a la encuesta. pOpinion > 0 && pOpinion <= 10.
+     * Agrega una opinión de una personas soltera entre 18 y 55 años. <br>
+     * <b>post: </b> Se agregá la opinión a la encuesta.
+     * @param pOpinion Opinión que se va a agregar a la encuesta. pOpinion > 0 && pOpinion <= 10.
      */
     public void agregarOpinionRangoEdadAdultosSoltero( int pOpinion )
     {
@@ -236,9 +237,9 @@ public class Encuesta
     }
 
     /**
-     * Agrega una opini�n de una personas soltera entre 55 y 200 a�os. <br>
-     * <b>post: </b> Se agreg� la opini�n a la encuesta.
-     * @param pOpinion Opini�n que se va a agregar a la encuesta. pOpinion > 0 && pOpinion <= 10.
+     * Agrega una opinión de una personas soltera entre 55 y 200 años. <br>
+     * <b>post: </b> Se agregá la opinión a la encuesta.
+     * @param pOpinion Opinión que se va a agregar a la encuesta. pOpinion > 0 && pOpinion <= 10.
      */
     public void agregarOpinionRangoEdadMayoresSoltero( int pOpinion )
     {
@@ -246,9 +247,9 @@ public class Encuesta
     }
 
     /**
-     * Agrega una opini�n de una personas casada entre 0 y 18 a�os. <br>
-     * <b>post: </b> Se agreg� la opini�n a la encuesta.
-     * @param pOpinion Opini�n que se va a agregar a la encuesta. pOpinion > 0 && pOpinion <= 10.
+     * Agrega una opinión de una personas casada entre 0 y 18 años. <br>
+     * <b>post: </b> Se agregá la opinión a la encuesta.
+     * @param pOpinion Opinión que se va a agregar a la encuesta. pOpinion > 0 && pOpinion <= 10.
      */
     public void agregarOpinionRangoEdadJovenesCasado( int pOpinion )
     {
@@ -256,9 +257,9 @@ public class Encuesta
     }
 
     /**
-     * Agrega una opini�n de una personas casada entre 18 y 55 a�os. <br>
-     * <b>post: </b> Se agreg� la opini�n a la encuesta.
-     * @param pOpinion Opini�n que se va a agregar a la encuesta. pOpinion > 0 && pOpinion <= 10.
+     * Agrega una opinión de una personas casada entre 18 y 55 años. <br>
+     * <b>post: </b> Se agregá la opinión a la encuesta.
+     * @param pOpinion Opinión que se va a agregar a la encuesta. pOpinion > 0 && pOpinion <= 10.
      */
     public void agregarOpinionRangoEdadAdultosCasado( int pOpinion )
     {
@@ -266,9 +267,9 @@ public class Encuesta
     }
 
     /**
-     * Agrega una opini�n de una personas casada entre 55 y 200 a�os. <br>
-     * <b>post: </b>Se agreg� la opini�n a la encuesta.
-     * @param pOpinion Opini�n que se va a agregar a la encuesta. pOpinion > 0 && pOpinion <= 10.
+     * Agrega una opinión de una personas casada entre 55 y 200 años. <br>
+     * <b>post: </b>Se agregá la opinión a la encuesta.
+     * @param pOpinion Opinión que se va a agregar a la encuesta. pOpinion > 0 && pOpinion <= 10.
      */
     public void agregarOpinionRangoEdadMayoresCasado( int pOpinion )
     {
@@ -276,11 +277,11 @@ public class Encuesta
     }
 
     // -----------------------------------------------------------
-    // Puntos de Extensi�n
+    // Puntos de Extensión
     // -----------------------------------------------------------
 
     /**
-     * M�todo de extensi�n 1 para el ejemplo.
+     * Método de extensión 1 para el ejemplo.
      * @return Respuesta 1.
      */
     public String metodo1( )
@@ -289,7 +290,7 @@ public class Encuesta
     }
 
     /**
-     * M�todo de extensi�n 2 para el ejemplo.
+     * Método de extensión 2 para el ejemplo.
      * @return Respuesta 2.
      */
     public String metodo2( )
