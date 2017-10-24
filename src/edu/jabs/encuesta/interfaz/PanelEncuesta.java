@@ -1,13 +1,14 @@
-/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Universidad de los Andes (Bogot� - Colombia)
- * Departamento de Ingenier�a de Sistemas y Computaci�n 
- * Licenciado bajo el esquema Academic Free License version 2.1 
- *
- * Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
- * Ejercicio: n1_encuesta
- * Autor: Equipo Cupi2 2017
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Universidad Santiago de Cali (Cali - Colombia)
+  Departamento de Ingeniería de Sistemas y Computación
+  Licenciado bajo el esquema Academic Free License version 2.1
+
+  Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
+  Ejercicio: N1-Encuesta-Java
+  Autor: Joan Andrés Buriticá Salazar
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
+
 package edu.jabs.encuesta.interfaz;
 
 import java.awt.BorderLayout;
@@ -47,7 +48,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
 import edu.jabs.encuesta.mundo.Encuesta;
 
 /**
- * Panel para agregar una opini�n.
+ * Panel para agregar una opinión.
  */
 @SuppressWarnings("serial")
 public class PanelEncuesta extends JPanel implements ActionListener
@@ -73,7 +74,7 @@ public class PanelEncuesta extends JPanel implements ActionListener
     private static final String ESTADO_CIVIL = "ESTADO CIVIL";
 
     /**
-     * Constante para activar la vista de opini�n.
+     * Constante para activar la vista de opinión.
      */
     private static final String OPINION = "OPINION";
 
@@ -97,7 +98,7 @@ public class PanelEncuesta extends JPanel implements ActionListener
     // -----------------------------------------------------------
 
     /**
-     * Ventana principal de la aplicaci�n.
+     * Ventana principal de la aplicación.
      */
     private InterfazEncuesta principal;
 
@@ -116,7 +117,7 @@ public class PanelEncuesta extends JPanel implements ActionListener
     private JLabel etiquetaRango;
 
     /**
-     * Etiqueta opini�n.
+     * Etiqueta opinión.
      */
     private JLabel etiquetaOpinion;
 
@@ -126,7 +127,7 @@ public class PanelEncuesta extends JPanel implements ActionListener
     private JLabel etiquetaEstadoCivil;
 
     /**
-     * Etiqueta n�mero de opiniones.
+     * Etiqueta número de opiniones.
      */
     private JLabel etiquetaNumeroOpiniones;
 
@@ -151,7 +152,7 @@ public class PanelEncuesta extends JPanel implements ActionListener
     private JLabel etiquetaFiltroEstadoCivil;
 
     /**
-     * Caja de texto n�mero de opiniones.
+     * Caja de texto número de opiniones.
      */
     private JTextField txtNumeroOpiniones;
 
@@ -166,42 +167,42 @@ public class PanelEncuesta extends JPanel implements ActionListener
     private JTextField txtConsulta;
 
     /**
-     * Bot�n realizar encuesta.
+     * Botón realizar encuesta.
      */
     private JButton botonRealizarEncuesta;
 
     /**
-     * Bot�n pasar a rango de edad.
+     * Botón pasar a rango de edad.
      */
     private JButton botonSiguienteRangoEdad;
 
     /**
-     * Bot�n volver a estado civil.
+     * Botón volver a estado civil.
      */
     private JButton botonAnteriorEstadoCivil;
 
     /**
-     * Bot�n pasar a estado civil.
+     * Botón pasar a estado civil.
      */
     private JButton botonSiguienteEstadoCivil;
 
     /**
-     * Bot�n volver a opini�n.
+     * Botón volver a opinión.
      */
     private JButton botonAnteriorOpinion;
 
     /**
-     * Bot�n agregar opini�n.
+     * Botón agregar opinión.
      */
     private JButton botonAgregarOpinion;
 
     /**
-     * Bot�n consultar.
+     * Botón consultar.
      */
     private JButton botonConsultar;
 
     /**
-     * Bot�n nueva encuesta.
+     * Botón nueva encuesta.
      */
     private JButton botonNuevaEncuesta;
 
@@ -211,7 +212,7 @@ public class PanelEncuesta extends JPanel implements ActionListener
     private JComboBox comboRango;
 
     /**
-     * Combo para los valores de la opini�n.
+     * Combo para los valores de la opinión.
      */
     private JComboBox comboOpinion;
 
@@ -251,7 +252,7 @@ public class PanelEncuesta extends JPanel implements ActionListener
 
     /**
      * Constructor del panel. <br>
-     * <b>post: </b> Se inicializ� el panel.
+     * <b>post: </b> Se inicializó el panel.
      * @param pPrincipal Ventana principal. pPrincipal != null.
      */
     public PanelEncuesta( InterfazEncuesta pPrincipal )
@@ -259,7 +260,7 @@ public class PanelEncuesta extends JPanel implements ActionListener
         principal = pPrincipal;
 
         setLayout( new BorderLayout( ) );
-        TitledBorder titulo = BorderFactory.createTitledBorder( "Agregar opini�n a encuesta" );
+        TitledBorder titulo = BorderFactory.createTitledBorder( "Agregar opinión a encuesta" );
         setBorder( titulo );
 
         // Panel bienvenida.
@@ -389,7 +390,7 @@ public class PanelEncuesta extends JPanel implements ActionListener
 
         etiquetaConsulta = new JLabel( "" );
         etiquetaConsulta.setFont( new Font( "Tahoma", Font.BOLD, 14 ) );
-        etiquetaNumeroOpiniones = new JLabel( "N�mero total de opiniones:" );
+        etiquetaNumeroOpiniones = new JLabel( "Número total de opiniones:" );
         etiquetaPromedioEncuesta = new JLabel( "Promedio total encuesta:" );
 
         txtConsulta = new JTextField( );
@@ -442,8 +443,8 @@ public class PanelEncuesta extends JPanel implements ActionListener
 
         datosCasados = new DefaultCategoryDataset( );
         datosSolteros = new DefaultCategoryDataset( );
-        JFreeChart graficoCasados = crearGrafico( "Calificaci�n casados", datosCasados );
-        JFreeChart graficoSolteros = crearGrafico( "Calificaci�n solteros", datosSolteros );
+        JFreeChart graficoCasados = crearGrafico( "Calificación casados", datosCasados );
+        JFreeChart graficoSolteros = crearGrafico( "Calificación solteros", datosSolteros );
 
         ChartPanel panelCasados = new ChartPanel( graficoCasados );
         panelCasados.setBorder( new EmptyBorder( 5, 5, 5, 5 ) );
@@ -488,12 +489,12 @@ public class PanelEncuesta extends JPanel implements ActionListener
     }
 
     // -----------------------------------------------------------
-    // M�todos
+    // Métodos
     // -----------------------------------------------------------
 
     /**
      * Muestra resultados de la encuesta en una ventana.
-     * @param pResultado Resultado parcial de la encuesta seg�n rango y estado Civil. pResultado > 0.
+     * @param pResultado Resultado parcial de la encuesta según rango y estado Civil. pResultado > 0.
      * @param pRango Edad de las personas para este grupo de resultados.
      * @param pEsCasado Estados civil de las personas para este grupo de resultados.
      */
@@ -504,13 +505,13 @@ public class PanelEncuesta extends JPanel implements ActionListener
 
         if( !Double.isNaN( pResultado ) )
         {
-            etiquetaConsulta.setText( "Los participantes le dieron una calificaci�n promedio de : " );
+            etiquetaConsulta.setText( "Los participantes le dieron una calificación promedio de : " );
             txtConsulta.setText( df.format( pResultado ) );
             txtConsulta.setVisible( true );
         }
         else
         {
-            etiquetaConsulta.setText( "Los participantes a�n no han calificado el curso" );
+            etiquetaConsulta.setText( "Los participantes aún no han calificado el curso" );
             txtConsulta.setText( "" );
             txtConsulta.setVisible( false );
         }
@@ -518,7 +519,7 @@ public class PanelEncuesta extends JPanel implements ActionListener
 
     /**
      * Manejo de los eventos de los botones.
-     * @param pEvento Evento de click sobre un bot�n. pEvento != null.
+     * @param pEvento Evento de click sobre un botón. pEvento != null.
      */
     public void actionPerformed( ActionEvent pEvento )
     {
@@ -559,31 +560,31 @@ public class PanelEncuesta extends JPanel implements ActionListener
     }
 
     /**
-     * Actualiza la informaci�n
-     * @param pEncuesta Encuesta de la cual se va a mostrar la informaci�n. pEncuesta != null.
+     * Actualiza la información
+     * @param pEncuesta Encuesta de la cual se va a mostrar la información. pEncuesta != null.
      */
     public void actualizar( Encuesta pEncuesta )
     {
         txtNumeroOpiniones.setText( "" + pEncuesta.darNumeroTotalOpiniones( ) );
         txtPromedioEncuesta.setText( principal.formatearValorReal( pEncuesta.darPromedio( ) ) );
 
-        datosCasados.setValue( pEncuesta.darResultadosJovenesCasados( ), "0-17 a�os", "" );
-        datosCasados.setValue( pEncuesta.darResultadosAdultosCasados( ), "18-54 a�os", "" );
-        datosCasados.setValue( pEncuesta.darResultadosMayoresCasados( ), "55 o m�s", "" );
-        datosSolteros.setValue( pEncuesta.darResultadosJovenesSolteros( ), "0-17 a�os", "" );
-        datosSolteros.setValue( pEncuesta.darResultadosAdultosSolteros( ), "18-54 a�os", "" );
-        datosSolteros.setValue( pEncuesta.darResultadosMayoresSolteros( ), "55 o m�s", "" );
+        datosCasados.setValue( pEncuesta.darResultadosJovenesCasados( ), "0-17 años", "" );
+        datosCasados.setValue( pEncuesta.darResultadosAdultosCasados( ), "18-54 años", "" );
+        datosCasados.setValue( pEncuesta.darResultadosMayoresCasados( ), "55 o más", "" );
+        datosSolteros.setValue( pEncuesta.darResultadosJovenesSolteros( ), "0-17 años", "" );
+        datosSolteros.setValue( pEncuesta.darResultadosAdultosSolteros( ), "18-54 años", "" );
+        datosSolteros.setValue( pEncuesta.darResultadosMayoresSolteros( ), "55 o más", "" );
     }
 
     /**
-     * Crea y configura los atributos de la gr�fica en barras.
-     * @param pTitulo T�tulo de la gr�fica.
-     * @return Los datos que se dibujan en la gr�fica.
+     * Crea y configura los atributos de la gráfica en barras.
+     * @param pTitulo Título de la gráfica.
+     * @return Los datos que se dibujan en la gráfica.
      */
     private static JFreeChart crearGrafico( String pTitulo, DefaultCategoryDataset pDatos )
     {
 
-        JFreeChart chart = ChartFactory.createBarChart( pTitulo, "Sector demogr�fico", "Promedio", pDatos, PlotOrientation.VERTICAL, true, true, false );
+        JFreeChart chart = ChartFactory.createBarChart( pTitulo, "Sector demográfico", "Promedio", pDatos, PlotOrientation.VERTICAL, true, true, false );
 
         chart.setBackgroundPaint( Color.white );
 
