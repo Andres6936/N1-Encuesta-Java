@@ -1,13 +1,14 @@
-/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Universidad de los Andes (Bogot� - Colombia)
- * Departamento de Ingenier�a de Sistemas y Computaci�n 
- * Licenciado bajo el esquema Academic Free License version 2.1 
- *
- * Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
- * Ejercicio: n1_encuesta
- * Autor: Equipo Cupi2 2017
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Universidad Santiago de Cali (Cali - Colombia)
+  Departamento de Ingeniería de Sistemas y Computación
+  Licenciado bajo el esquema Academic Free License version 2.1
+
+  Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
+  Ejercicio: N1-Encuesta-Java
+  Autor: Joan Andrés Buriticá Salazar
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
+
 package edu.jabs.encuesta.interfaz;
 
 import javax.swing.ImageIcon;
@@ -26,7 +27,7 @@ public class PanelImagen extends JPanel
 
     /**
      * Constructor del panel. <br>
-     * <b>post: </b> Panel qued� inicializado.
+     * <b>post: </b> Panel quedó inicializado.
      */
     public PanelImagen( )
     {
