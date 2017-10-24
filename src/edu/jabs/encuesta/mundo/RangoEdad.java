@@ -1,13 +1,14 @@
-/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Universidad de los Andes (Bogot� - Colombia)
- * Departamento de Ingenier�a de Sistemas y Computaci�n 
- * Licenciado bajo el esquema Academic Free License version 2.1 
- *
- * Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
- * Ejercicio: n1_encuesta
- * Autor: Equipo Cupi2 2017
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Universidad Santiago de Cali (Cali - Colombia)
+  Departamento de Ingeniería de Sistemas y Computación
+  Licenciado bajo el esquema Academic Free License version 2.1
+
+  Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
+  Ejercicio: N1-Encuesta-Java
+  Autor: Joan Andrés Buriticá Salazar
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
+
 package edu.jabs.encuesta.mundo;
 
 /**
@@ -41,25 +42,25 @@ public class RangoEdad
     private int totalOpinionCasados;
 
     /**
-     * Edad m�nima para este rango de la poblaci�n.
+     * Edad mínima para este rango de la población.
      */
     private int edadMinima;
 
     /**
-     * Edad m�xima para este rango de la poblaci�n.
+     * Edad máxima para este rango de la población.
      */
     private int edadMaxima;
 
     // -----------------------------------------------------------
-    // M�todos
+    // Métodos
     // -----------------------------------------------------------
 
     /**
      * Construye el rango de encuestas. <br>
-     * <b>post: </b> La edad m�nima y edad m�xima fueron inicializadas con los valores dados por par�metro. <br>
-     * El n�mero de casados, n�mero de solteros, el total de opiniones de solteros y el total de opiniones de casados fueron inicializados en 0.
-     * @param pEdadMinima Edad m�nima para este rango de la poblaci�n. pEdadMinima > 0.
-     * @param pEdadMaxima Edad m�xima para este rango de la poblaci�n. pEdadMaxima > 0 && pEdadMaxima > pEdadMinima.
+     * <b>post: </b> La edad mínima y edad máxima fueron inicializadas con los valores dados por parámetro. <br>
+     * El número de casados, número de solteros, el total de opiniones de solteros y el total de opiniones de casados fueron inicializados en 0.
+     * @param pEdadMinima Edad mínima para este rango de la población. pEdadMinima > 0.
+     * @param pEdadMaxima Edad máxima para este rango de la población. pEdadMaxima > 0 && pEdadMaxima > pEdadMinima.
      */
     public RangoEdad( int pEdadMinima, int pEdadMaxima )
     {
@@ -81,8 +82,8 @@ public class RangoEdad
     }
 
     /**
-     * Retorna la edad m�nima de este rango de edad.
-     * @return Edad m�nima de este rango de edad.
+     * Retorna la edad mínima de este rango de edad.
+     * @return Edad mínima de este rango de edad.
      */
     public int darEdadMinima( )
     {
@@ -90,8 +91,8 @@ public class RangoEdad
     }
 
     /**
-     * Retorna la edad m�xima para este rango de edad.
-     * @return Edad m�xima para este rango de edad.
+     * Retorna la edad máxima para este rango de edad.
+     * @return Edad máxima para este rango de edad.
      */
     public int darEdadMaxima( )
     {
@@ -100,7 +101,7 @@ public class RangoEdad
 
     /**
      * Retorna el promedio de las opiniones de la gente casada en este rango de edad.
-     * @return Promedio de opini�n del curso en la encuesta en este rango de edad de la clase considerando s�lo los casados.
+     * @return Promedio de opinión del curso en la encuesta en este rango de edad de la clase considerando sólo los casados.
      */
     public double darPromedioCasados( )
     {
@@ -109,7 +110,7 @@ public class RangoEdad
 
     /**
      * Retorna el promedio de las opiniones de la gente soltera en este rango.
-     * @return Promedio de opini�n del curso en la encuesta en el rango de edad de la clase considerando s�lo los solteros.
+     * @return Promedio de opinión del curso en la encuesta en el rango de edad de la clase considerando sólo los solteros.
      */
     public double darPromedioSolteros( )
     {
@@ -117,7 +118,7 @@ public class RangoEdad
     }
 
     /**
-     * Retorna el n�mero de opiniones hechas para este rango.
+     * Retorna el número de opiniones hechas para este rango.
      * @return Cantidad total de opiniones.
      */
     public int darNumeroOpiniones( )
@@ -135,8 +136,8 @@ public class RangoEdad
     }
 
     /**
-     * Retorna el n�mero de personas casadas que respondieron la encuesta en este rango de edad.
-     * @return N�mero de personas casadas que respondieron la encuesta.
+     * Retorna el número de personas casadas que respondieron la encuesta en este rango de edad.
+     * @return Número de personas casadas que respondieron la encuesta.
      */
     public int darNumeroCasados( )
     {
@@ -144,8 +145,8 @@ public class RangoEdad
     }
 
     /**
-     * Retorna el n�mero de personas solteras que respondieron la encuesta en este rango de edad.
-     * @return N�mero de personas solteras que respondieron la encuesta en este rango de edad.
+     * Retorna el número de personas solteras que respondieron la encuesta en este rango de edad.
+     * @return Número de personas solteras que respondieron la encuesta en este rango de edad.
      */
     public int darNumeroSolteros( )
     {
@@ -153,8 +154,8 @@ public class RangoEdad
     }
 
     /**
-     * Retorna el n�mero total de opiniones de los encuestados casados en este rango de edad.
-     * @return N�mero total de opiniones de los encuestados casados en este rango de edad.
+     * Retorna el número total de opiniones de los encuestados casados en este rango de edad.
+     * @return Número total de opiniones de los encuestados casados en este rango de edad.
      */
     public int darTotalOpinionCasados( )
     {
@@ -162,8 +163,8 @@ public class RangoEdad
     }
 
     /**
-     * Retorna el n�mero total de opiniones de los encuestados solteros en este rango de edad.
-     * @return N�mero total de opiniones de los encuestados solteros en este rango de edad.
+     * Retorna el número total de opiniones de los encuestados solteros en este rango de edad.
+     * @return Número total de opiniones de los encuestados solteros en este rango de edad.
      */
     public int darTotalOpinionSolteros( )
     {
@@ -171,8 +172,8 @@ public class RangoEdad
     }
 
     /**
-     * Retorna una cadena de texto con la edad m�nima y edad m�xima.
-     * @return Cadena de car�cteres con el rango de edades para este grupo.
+     * Retorna una cadena de texto con la edad mínima y edad máxima.
+     * @return Cadena de carácteres con el rango de edades para este grupo.
      */
     public String darRangoDeEdad( )
     {
@@ -180,8 +181,8 @@ public class RangoEdad
     }
 
     /**
-     * Agrega una opini�n de una persona soltera para este rango de edad. <br>
-     * <b>post: </b> Se agreg� una nueva opini�n.
+     * Agrega una opinión de una persona soltera para este rango de edad. <br>
+     * <b>post: </b> Se agregá una nueva opinión.
      * @param pOpinion Opinion del encuestado. pOpinion >= 0 && pOpinion < 11.
      */
     public void agregarOpinionSoltero( int pOpinion )
@@ -191,8 +192,8 @@ public class RangoEdad
     }
 
     /**
-     * Agrega una opini�n de una persona casada para este rango de la poblaci�n. <br>
-     * <b>post: </b> Se agreg� una nueva opini�n.
+     * Agrega una opinión de una persona casada para este rango de la poblaci�n. <br>
+     * <b>post: </b> Se agregá una nueva opinión.
      * @param pOpinion Opinion del encuestado. pOpinion >= 0 && pOpinion < 11.
      */
     public void agregarOpinionCasado( int pOpinion )
